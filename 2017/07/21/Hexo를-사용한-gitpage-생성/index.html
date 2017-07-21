@@ -5,18 +5,20 @@
   
   <title>Hexo를 사용한 gitpage 생성 | 평범한 개발자 블로그</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hexo 설치 및 블로그 초기 생성 환경 구축12345npm i -g hexo-clihexo init &amp;#123;&amp;#123;blog name&amp;#125;&amp;#125;cd &amp;#123;&amp;#123;blog name&amp;#125;&amp;#125;npm ihexo s">
+  <meta name="description" content="hexo 설치 및 블로그 초기 생성 환경 구축12345npm i -g hexo-clihexo init $&amp;#123;blog name&amp;#125;cd $&amp;#123;blog name&amp;#125;npm ihexo s github repository 생성 repository를 “${github 계정이름}.github.io”로 생성하면 자동으로 master branch">
 <meta name="keywords" content="Hexo, gitpages">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo를 사용한 gitpage 생성">
 <meta property="og:url" content="http://antksk.github.com/2017/07/21/Hexo를-사용한-gitpage-생성/index.html">
 <meta property="og:site_name" content="평범한 개발자 블로그">
-<meta property="og:description" content="hexo 설치 및 블로그 초기 생성 환경 구축12345npm i -g hexo-clihexo init &amp;#123;&amp;#123;blog name&amp;#125;&amp;#125;cd &amp;#123;&amp;#123;blog name&amp;#125;&amp;#125;npm ihexo s">
+<meta property="og:description" content="hexo 설치 및 블로그 초기 생성 환경 구축12345npm i -g hexo-clihexo init $&amp;#123;blog name&amp;#125;cd $&amp;#123;blog name&amp;#125;npm ihexo s github repository 생성 repository를 “${github 계정이름}.github.io”로 생성하면 자동으로 master branch">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2017-07-21T07:18:11.000Z">
+<meta property="og:image" content="http://antksk.github.com/2017/07/21/Hexo를-사용한-gitpage-생성/bd697bd2.png">
+<meta property="og:updated_time" content="2017-07-21T08:49:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo를 사용한 gitpage 생성">
-<meta name="twitter:description" content="hexo 설치 및 블로그 초기 생성 환경 구축12345npm i -g hexo-clihexo init &amp;#123;&amp;#123;blog name&amp;#125;&amp;#125;cd &amp;#123;&amp;#123;blog name&amp;#125;&amp;#125;npm ihexo s">
+<meta name="twitter:description" content="hexo 설치 및 블로그 초기 생성 환경 구축12345npm i -g hexo-clihexo init $&amp;#123;blog name&amp;#125;cd $&amp;#123;blog name&amp;#125;npm ihexo s github repository 생성 repository를 “${github 계정이름}.github.io”로 생성하면 자동으로 master branch">
+<meta name="twitter:image" content="http://antksk.github.com/2017/07/21/Hexo를-사용한-gitpage-생성/bd697bd2.png">
   
     <link rel="alternate" href="/atom.xml" title="평범한 개발자 블로그" type="application/atom+xml">
   
@@ -87,12 +89,27 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="hexo-설치-및-블로그-초기-생성-환경-구축"><a href="#hexo-설치-및-블로그-초기-생성-환경-구축" class="headerlink" title="hexo 설치 및 블로그 초기 생성 환경 구축"></a>hexo 설치 및 블로그 초기 생성 환경 구축</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm i -g hexo-cli</div><div class="line">hexo init &#123;&#123;blog name&#125;&#125;</div><div class="line">cd &#123;&#123;blog name&#125;&#125;</div><div class="line">npm i</div><div class="line">hexo s</div></pre></td></tr></table></figure>
+        <h3 id="hexo-설치-및-블로그-초기-생성-환경-구축"><a href="#hexo-설치-및-블로그-초기-생성-환경-구축" class="headerlink" title="hexo 설치 및 블로그 초기 생성 환경 구축"></a>hexo 설치 및 블로그 초기 생성 환경 구축</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm i -g hexo-cli</div><div class="line">hexo init $&#123;blog name&#125;</div><div class="line">cd $&#123;blog name&#125;</div><div class="line">npm i</div><div class="line">hexo s</div></pre></td></tr></table></figure>
+<h3 id="github-repository-생성"><a href="#github-repository-생성" class="headerlink" title="github repository 생성"></a>github repository 생성</h3><ul>
+<li>repository를 “${github 계정이름}.github.io”로 생성하면 자동으로 master branch를 entory gitpage로 설정됨</li>
+<li>임의의 repository 이름으로 생성하는 경우, “${github 계정이름}.github.io/${임의로 생성한 repository 이름}” 형태로 gitpages 생성됨</li>
+<li>참고 : <a href="http://blog.lattecom.xyz/2016/06/28/hexo-blog-github-pages/" target="_blank" rel="external">http://blog.lattecom.xyz/2016/06/28/hexo-blog-github-pages/</a></li>
+</ul>
+<h3 id="hexo-n-post-이름-명령어를-통한-POST-생성"><a href="#hexo-n-post-이름-명령어를-통한-POST-생성" class="headerlink" title="hexo n ${post 이름} 명령어를 통한 POST 생성"></a>hexo n ${post 이름} 명령어를 통한 POST 생성</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo n $&#123;post 이름&#125;</div></pre></td></tr></table></figure>
+<p><code>hexo n &quot;Hexo를 사용한 gitpages 생성&quot;</code> 명령을 수행하면 아래와 같이, source &gt; _posts 경로에 *.md 파일이 생성됨</p>
+<img src="/2017/07/21/Hexo를-사용한-gitpage-생성/bd697bd2.png" alt="source > _posts 경로" title="source > _posts 경로">
+<h3 id="상대-경로-이미지-등록"><a href="#상대-경로-이미지-등록" class="headerlink" title="상대 경로 이미지 등록"></a>상대 경로 이미지 등록</h3><ol>
+<li>이미지 설정을 위해 경로는 _config.yml파일 <code>post_asset_folder: true</code>과 같이 설정</li>
+<li>상대 경로 문제로 인해 기존 markdown문법 아닌  <code>{ % asset_img &quot;bd697bd2.png&quot; &quot;source &gt; _posts 경로&quot; % }</code>으로 이미지 설정<br>참고 : <a href="https://hexo.io/ko/docs/asset-folders.html#전역-Asset-폴더" target="_blank" rel="external">https://hexo.io/ko/docs/asset-folders.html#전역-Asset-폴더</a></li>
+</ol>
+<ul>
+<li>참고 : <a href="https://hexo.io/ko/index.html" target="_blank" rel="external">https://hexo.io/ko/index.html</a></li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://antksk.github.com/2017/07/21/Hexo를-사용한-gitpage-생성/" data-id="cj5djhakr0000zn5zm5zgtfej" class="article-share-link">Share</a>
+      <a data-url="http://antksk.github.com/2017/07/21/Hexo를-사용한-gitpage-생성/" data-id="cj5dkzldc0000ky5zu3lpub53" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo-gitpages/">Hexo, gitpages</a></li></ul>
@@ -101,6 +118,16 @@
   </div>
   
     
+<nav id="article-nav">
+  
+  
+    <a href="/2017/07/21/Hexo를-사용한-gitpage-생성/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hexo를 사용한 gitpage 생성</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
@@ -148,6 +175,10 @@
         
           <li>
             <a href="/2017/07/21/Hexo를-사용한-gitpage-생성/">Hexo를 사용한 gitpage 생성</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/21/Hexo를-사용한-gitpage-생성/">Hexo를 사용한 gitpage 생성</a>
           </li>
         
       </ul>
